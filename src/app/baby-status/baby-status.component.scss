@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+}
+
+.baby {
+    width: 150px;
+    height: 150px;
+    background-image: url('~/assets/baby-happy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.baby-sad {
+    background-image: url('~/assets/baby-sad.png');
+}
+.baby-super-sad {
+    background-image: url('~/assets/baby-super-sad.png');
+}
+
+.status-indicator {
+    margin: 12px 0;
+    .status-indicator-counter{
+        text-align: right;
+    }
+}
+
+.life {
+    color: red;
+}

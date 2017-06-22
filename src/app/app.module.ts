@@ -22,11 +22,13 @@ import { environment } from 'environments/environment';
 
 /* Services */
 import { RandomPickerService } from './random-picker.service';
+import { BabyStatusComponent } from './baby-status/baby-status.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BabiesComponent
+    BabiesComponent,
+    BabyStatusComponent
   ],
   imports: [
     BrowserModule,
