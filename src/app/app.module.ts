@@ -11,6 +11,7 @@ import{ AngularFireDatabaseModule} from 'angularfire2/database'
 
 //Firebase config file
 import { environment } from 'environments/environment';
+import { RandomPickerService } from './random-picker.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { environment } from 'environments/environment';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [RandomPickerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
