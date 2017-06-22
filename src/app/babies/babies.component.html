@@ -1,6 +1,7 @@
 <h1>Babies Born</h1>
 <ul>
-	<li *ngFor="let baby of babies">
+	<li *ngFor="let baby of babies | async">
 		{{baby.name}}
 	</li>
 </ul>
+<button (click)="giveBirth()">Give birth!!!</button>
