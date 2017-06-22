@@ -1,2 +1,12 @@
-<app-baby-status [baby]="baby | async"></app-baby-status>
-<!-- take care actions -->
+<section fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="12px">
+    <md-card *ngIf="baby | async; let baby; else loading">
+        <md-card-title>Baby Status</md-card-title>
+        <md-card-content>
+            <app-baby-status [baby]="baby"></app-baby-status>
+        </md-card-content>
+    </md-card>
+    <ng-template #loading>Loading Baby Data...</ng-template>
+
+    <!-- inject Baby Care or Baby Control Room components -->
+    <router-outlet></router-outlet>
+</section>

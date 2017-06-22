@@ -25,6 +25,7 @@ import { RandomPickerService } from './random-picker.service';
 import { BabyStatusComponent } from './baby-status/baby-status.component';
 import { StatusIndicatorComponent } from './status-indicator/status-indicator.component';
 import { BabyComponent } from './baby/baby.component';
+import { BabyCareComponent } from './baby-care/baby-care.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { BabyComponent } from './baby/baby.component';
     BabiesComponent,
     BabyStatusComponent,
     StatusIndicatorComponent,
-    BabyComponent
+    BabyComponent,
+    BabyCareComponent
   ],
   imports: [
     BrowserModule,

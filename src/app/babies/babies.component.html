@@ -5,7 +5,7 @@
   <md-card *ngFor="let baby of babies | async">
     <md-card-title>{{baby.name}}</md-card-title>
     <md-card-actions>
-        <a md-button color="primary" [routerLink]="[baby.$key]">Take care</a>
+        <a md-button color="primary" [routerLink]="[baby.$key, 'care']">Take care</a>
         <a md-button color="accent" [routerLink]="[baby.$key, 'control']">Control!!!</a>
     </md-card-actions>
   </md-card>

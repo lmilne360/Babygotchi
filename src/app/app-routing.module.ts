@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BabiesComponent } from 'app/babies/babies.component';
 import { BabyComponent } from 'app/baby/baby.component';
+import { BabyCareComponent } from 'app/baby-care/baby-care.component';
 
 const routes: Routes = [
   {
@@ -15,11 +16,26 @@ const routes: Routes = [
     {
         path: ':id',
         component: BabyComponent,
-        pathMatch: 'prefix'
+        children: [
+        {
+          path: 'care',
+          component: BabyCareComponent,
+        },
+        /* We will uncomment this soon
+        {
+            path: 'control',
+            component: BabyControlRoomComponent
+        }
+        */
+        ]
     }
     ],
   },
-
+{
+      path: '',
+      pathMatch: 'full',
+      redirectTo: 'babies'
+  },
   {
       path: '**',
       redirectTo: 'babies'
