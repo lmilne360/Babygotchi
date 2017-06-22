@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BabiesComponent } from 'app/babies/babies.component';
 import { BabyComponent } from 'app/baby/baby.component';
 import { BabyCareComponent } from 'app/baby-care/baby-care.component';
+import { BabyControlRoomComponent } from 'app/baby-control-room/baby-control-room.component';
 
 const routes: Routes = [
   {
@@ -21,12 +22,10 @@ const routes: Routes = [
           path: 'care',
           component: BabyCareComponent,
         },
-        /* We will uncomment this soon
         {
             path: 'control',
             component: BabyControlRoomComponent
         }
-        */
         ]
     }
     ],
