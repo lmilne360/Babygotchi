@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+// Angular Material Theme
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+// Font from Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+// Resets
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+// Title
+.app-title {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-decoration: none;
+}

@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+<!-- this means, layout my child nodes within a column and fill the complete window -->
+<section fxLayout="column" fxFill>
+
+  <md-toolbar color="primary" class="mat-elevation-z6">
+    <a class="app-title" [routerLink]="['/']">BABY-GoTChi</a>
+  </md-toolbar>
+
+  <!-- this means, layout my child nodes within a column, starting from the top, then align them in the center horizontally and leave 12px between them -->
+  <section fxFlex fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="12px" class="app-content">
+    <router-outlet></router-outlet>
+  </section>
+
+</section>
