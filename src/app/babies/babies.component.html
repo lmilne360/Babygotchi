@@ -1,8 +1,8 @@
-<h1>Babies Born</h1>
+<h1>Babies Born!</h1>
 
 <section fxLayout="column" fxLayoutGap="12px">
 
- <md-card *ngFor="let baby of babies | async">
+  <md-card *ngFor="let baby of babies | async">
     <md-card-title>{{baby.name}}</md-card-title>
     <md-card-actions>
         <a md-button color="primary" [routerLink]="[baby.$key, 'care']">Take care</a>
@@ -11,5 +11,4 @@
   </md-card>
 
   <button md-raised-button color="accent" (click)="giveBirth()">Give Birth!</button>
-  
 </section>
