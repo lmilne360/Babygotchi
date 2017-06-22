@@ -23,12 +23,14 @@ import { environment } from 'environments/environment';
 /* Services */
 import { RandomPickerService } from './random-picker.service';
 import { BabyStatusComponent } from './baby-status/baby-status.component';
+import { StatusIndicatorComponent } from './status-indicator/status-indicator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BabiesComponent,
-    BabyStatusComponent
+    BabyStatusComponent,
+    StatusIndicatorComponent
   ],
   imports: [
     BrowserModule,
