@@ -8,5 +8,5 @@ import { Component, OnInit, Input } from '@angular/core';
 export class StatusIndicatorComponent {
   @Input() label: string;
   @Input() value: number;
-  @Input() color: string = 'primary';
+  @Input() color = 'primary';
 }

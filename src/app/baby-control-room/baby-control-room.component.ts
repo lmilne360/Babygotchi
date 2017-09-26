@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { FirebaseApp } from 'angularfire2';
-import { MdSnackBar } from "@angular/material";
-import { RandomPickerService } from "app/random-picker.service";
+import { MdSnackBar } from '@angular/material';
+import { RandomPickerService } from 'app/random-picker.service';
 
-const messages = ['You are evil!', 'I bow before you Dr Evil!', 'Satanaaaas!!', "Keepin' it real!", "Wow that was mean!",
-                  "You have no shame!", "OMG reaaaallllly?" ];
+const messages = ['You are evil!', 'I bow before you Dr Evil!', 'Satanaaaas!!', 'Keepin\' it real!', 'Wow that was mean!',
+                  'You have no shame!', 'OMG reaaaallllly?' ];
 
 @Component({
   selector: 'app-baby-control-room',

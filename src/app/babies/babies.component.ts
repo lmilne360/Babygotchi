@@ -19,17 +19,19 @@ export class BabiesComponent implements OnInit {
   	this.babies = this.db.list('/babies');
   }
 
-  //create new baby
-  giveBirth(){
-  	const newBaby = new Baby(this.pickRandomName())
-  	const babies = this.db.list('/babies')
-  	// this saves the baby 
-  	babies.push(newBaby)
+  // create new baby
+  giveBirth() {
+  	const newBaby = new Baby(this.pickRandomName());
+  	const babies = this.db.list('/babies');
+  	// this saves the baby
+  	babies.push(newBaby);
   }
 
-  pickRandomName(){
-  	const names= ['Samira2', 'Ali', 'Toby', 'Tobina', 'Shishimba', 'Tuki', 'Laurentjr', 'DonkeyKong', 'Carlos', 'Laura', 'John', 'Augustina', 'Manuel', 'Lola', 'Isaac', 'Georgina', 'Paolo', 'Maria', 'Ronaldo', 'Ronalda']
-  	return this.randomService.pickAtRandom(names)
+  pickRandomName() {
+    const names = ['Samira2', 'Ali', 'Toby', 'Tobina', 'Shishimba', 'Tuki', 'Laurentjr',
+     'DonkeyKong', 'Carlos', 'Laura', 'John', 'Augustina', 'Manuel', 'Lola', 'Isaac', 'Georgina',
+      'Paolo', 'Maria', 'Ronaldo', 'Ronalda'];
+  	return this.randomService.pickAtRandom(names);
   }
 
 }

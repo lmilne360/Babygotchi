@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FirebaseApp } from 'angularfire2';
 import { ActivatedRoute } from '@angular/router';
 import { MdSnackBar } from '@angular/material';
-import { RandomPickerService } from "app/random-picker.service"; 
+import { RandomPickerService } from 'app/random-picker.service';
 
 const messages = ['Awesome Dad!', 'You rock Buddy!', 'Hell yeah!', 'Good job!!', 'Saaaavyyy', 'Dad of the Year!',
                   'Go get a beer, you deserve it!', 'Sweeeet!'];
