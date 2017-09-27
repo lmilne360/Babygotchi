@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { MaterialModule } from '@angular/material';
 
 import { BabyStatusComponent } from './baby-status.component';
+import { StatusIndicatorComponent } from '../status-indicator/status-indicator.component';
 
 describe('BabyStatusComponent', () => {
   let component: BabyStatusComponent;
@@ -8,7 +11,11 @@ describe('BabyStatusComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BabyStatusComponent ]
+      imports: [
+        RouterTestingModule,
+        MaterialModule
+      ],
+      declarations: [ BabyStatusComponent, StatusIndicatorComponent ]
     })
     .compileComponents();
   }));

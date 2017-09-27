@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { StatusIndicatorComponent } from './status-indicator.component';
+import { MaterialModule } from '@angular/material';
 
 describe('StatusIndicatorComponent', () => {
   let component: StatusIndicatorComponent;
@@ -8,6 +9,7 @@ describe('StatusIndicatorComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [MaterialModule],
       declarations: [ StatusIndicatorComponent ]
     })
     .compileComponents();

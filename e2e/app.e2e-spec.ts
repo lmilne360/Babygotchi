@@ -10,7 +10,7 @@ describe('baby-gotchi App', () => {
   it('should display welcome message', done => {
     page.navigateTo();
     page.getParagraphText()
-      .then(msg => expect(msg).toEqual('Welcome to app!!'))
+      .then(msg => expect(msg).toEqual('Born Babies!'))
       .then(done, done.fail);
   });
 });
