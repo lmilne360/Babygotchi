@@ -34,21 +34,28 @@ export class BabyControlRoomComponent implements OnInit {
   babyHungry() {
     this.showMessage();
     const statRef = this.firebaseApp.database().ref(`/babies/${this.babyId}/hunger`);
-    statRef.transaction(stat => stat + 10);
+    statRef.transaction(stat => stat + 10 > 100 ? stat : stat + 10);
   }
 
   babyShitty() {
     this.showMessage();
     const statRef = this.firebaseApp.database().ref(`/babies/${this.babyId}/shittiness`);
-    statRef.transaction(stat => stat + 10);
+    statRef.transaction(stat => stat + 10 > 100 ? stat : stat + 10);
   }
 
   babySleepy() {
     this.showMessage();
     const statRef = this.firebaseApp.database().ref(`/babies/${this.babyId}/sleepiness`);
-    statRef.transaction(stat => stat + 10);
+    statRef.transaction(stat => stat + 10 > 100 ? stat : stat + 10);
   }
 
+  /*
+  adjustLife() {
+    const statRef = this.firebaseApp.database().ref(`/babies/${this.babyId}/life`);
+    statRef.transaction(stat => updatedLife)
+  }
+
+  */
   showMessage() {
     this.mdSnackBar.open(this.randomPicker.pickAtRandom(messages), null, {duration: 3000});
   }
