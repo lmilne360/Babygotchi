@@ -1,7 +1,7 @@
 <section *ngIf="baby">
   <h1>{{baby.name}} is {{status}}</h1>
 
-  <div class="baby" [class.baby-sad]="baby.life < 50" [class.baby-super-sad]="baby.life < 25"></div>
+  <div class="baby" [class.baby-sad]="baby.life <= 50" [class.baby-super-sad]="baby.life < 25"></div>
 
   <section fxLayout="column" fxLayoutGap="12px">
     <app-status-indicator [label]="'Sleepiness'" [value]="baby.sleepiness"></app-status-indicator>
